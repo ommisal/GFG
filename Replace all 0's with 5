@@ -1,0 +1,11 @@
+int convertFive(int n) {
+    // Your code here
+    if(n==0)
+    {
+        return 0;
+    }
+    int lst=n%10;
+    if(lst==0)
+        lst=5;
+    return convertFive(n/10)*10+lst;
+}
