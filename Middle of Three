@@ -1,0 +1,15 @@
+class Solution{
+  public:
+    int middle(int A, int B, int C){
+        //code here//Position this line where user code will be pasted.
+        long x= A-B;
+        long y = B-C;
+        long z = A-C;
+        if(x*y>0)
+            return B;
+        else if(x*z>0)
+            return C;
+        else
+            return A;
+    }
+};
